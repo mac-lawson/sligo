@@ -44,7 +44,7 @@ const kickedOutImg = '../images/leave-room.png';
 const aboutImg = '../images/mirotalk-logo.png';
 // nice free icon: https://www.iconfinder.com
 
-const surveyActive = true; // when leaving the room give a feedback
+const surveyActive = false; // when leaving the room give a feedback
 const notifyBySound = true; // turn on - off sound notifications
 const fileSharingInput = '*'; // allow all file extensions
 
