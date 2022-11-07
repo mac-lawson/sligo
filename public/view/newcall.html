@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <!-- https://github.com/mikecao/umami -->
+
+        <script
+            async
+            defer
+            data-website-id="a378bd09-212d-4801-94cc-9797b6a5f3f7"
+            src="https://stats.mirotalk.org/umami.js"
+        ></script>
+
+        <!-- Title and Icon -->
+
+        <title>Sligo Secure</title>
+        <link rel="shortcut icon" href="../images/Sligo.png" />
+        <link rel="apple-touch-icon" href="../images/Sligo.png" />
+
+        <!-- Meta Information -->
+
+ 
+
+        <!-- https://ogp.me -->
+
+        <meta property="og:type" content="app-webrtc" />
+        <meta property="og:site_name" content="Sligo Secure Meetings" />
+        <meta property="og:title" content="Make a Secure Call" />
+        <meta
+            property="og:description"
+            content="Sligo Secure Video Platform"
+        />
+        <meta property="og:image" content="../images/Sligo.png" />
+        <meta property="og:url" content="../images/Sligo.png" />
+
+        <!-- StyleSheet -->
+
+        <link rel="stylesheet" href="../css/landing.css" />
+        <link rel="stylesheet" href="../css/newcall.css" />
+    </head>
+    <body class="has-animations">
+        <div class="body-wrap">
+            <header class="site-header reveal-from-top">
+                <div class="container">
+                    <div class="site-header-inner">
+                        <div class="brand">
+                            <div class="m-0">
+                                <br/>
+                                <a href="/"><img src="../images/Sligo.png" alt="Neon" width="130" height="130" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="site-content">
+                <section class="hero section illustration-section-01">
+                    <div class="container">
+                        <div class="hero-inner section-inner">
+                            <div class="split-wrap invert-mobile">
+                                <div class="split-item">
+                                    <div class="hero-content split-item-content center-content-mobile">
+                                        <h1 class="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="150">
+                                            Sligo: Secure Video Conferencing Platform 
+       
+                                        </h1>
+                                        <p class="mt-0 mb-32 reveal-from-bottom" data-reveal-delay="300">
+                                            P2P technology creates low latency rooms with disposable, open links for 
+                                            anyone to join. 
+                                        </p>
+                                    </div>
+                                    <style>
+                                        @media (min-width: 641px) {
+                                            .hero .split-wrap .split-item {
+                                                min-height: 492px;
+                                            }
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cta section center-content-mobile reveal-from-bottom">
+                    <div class="container">
+                        <div class="cta-inner section-inner cta-split">
+                            <div class="cta-slogan">
+                                <h3 class="m-0">
+                                    Pick a room name.<br />
+                                    How about this one?
+                                </h3>
+                            </div>
+                            <div class="cta-action">
+                                <div class="mb-24">
+                                    <label class="form-label screen-reader" for="roomName">mirotalk</label>
+                                    <div class="form-group-desktop">
+                                        <input class="form-input" type="text" id="roomName" value="mirotalk" />
+                                        <button
+                                            id="joinRoomButton"
+                                            class="button button-primary pulse"
+                                            onclick="joinRoom()"
+                                        >
+                                            Join Room
+                                        </button>
+                                        <script>
+                                            document.getElementById('roomName').onkeyup = (e) => {
+                                                if (e.keyCode === 13) {
+                                                    e.preventDefault();
+                                                    joinRoom();
+                                                }
+                                            };
+                                            function joinRoom() {
+                                                let roomName = document.getElementById('roomName').value;
+                                                window.location.href = '/join/' + roomName;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="site-footer center-content-mobile">
+                <div class="container">
+                    <div class="site-footer-inner">
+                        <div class="footer-top space-between text-xxs">
+                            <div class="brand">
+                                <a href="/"><img src="../images/Sligo.png" alt="Neon" width="96" height="96" /></a>
+                            </div>
+                            <div class="footer-social">
+                                
+                            </div>
+                        </div>
+                        <div class="footer-bottom space-between text-xxs invert-order-desktop">
+                            <nav class="footer-nav">
+                                <ul class="list-reset">
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.linkedin.com/in/maclawson"
+                                            >Contact: Mac Lawson</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="footer-copyright">Sligo Secure Video</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script defer src="../js/landing.js"></script>
+        <script defer src="../js/newRoom.js"></script>
+    </body>
+</html>
