@@ -1,5 +1,5 @@
 
-![firstlogo](sligo_new.png)
+![firstlogo](/public/images/sligo_new.png)
 
 ## Sligo: Secure and Simple Conferencing Solution
 ### Deploy
