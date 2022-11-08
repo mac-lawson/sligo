@@ -3,7 +3,7 @@ const { doc } = require("prettier");
  * <h1>Secure the Room</h1>
  */
 function secureRoom() {
-    handleVideo(e, false);
+    // handleVideo(e, false);
     const Confidential = document.getElementById("Confidential");
     const Top_Secret = document.getElementById("Top Secret");
 
@@ -14,7 +14,7 @@ function secureRoom() {
  * <h1>Unsecure the Room</h1>
  */
 function unencryptRoom() {
-    handleVideo(e, true);
+    // handleVideo(e, true);
     const Confidential = document.getElementById("Confidential");
     const Top_Secret = document.getElementById("Top Secret");
 
